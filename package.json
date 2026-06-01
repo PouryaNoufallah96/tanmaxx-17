@@ -4,8 +4,8 @@
   "type": "module",
   "packageManager": "pnpm@9.0.0",
   "scripts": {
-    "dev": "pnpm --filter @tanmaxx/web dev",
-    "build": "pnpm --filter @tanmaxx/web build",
+    "dev": "node api.js && pnpm --filter @tanmaxx/web dev",
+    "build": "node api.js && pnpm --filter @tanmaxx/web build",
     "preview": "pnpm --filter @tanmaxx/web preview",
     "test": "pnpm -r test",
     "typecheck": "pnpm -r typecheck",
